@@ -1,0 +1,36 @@
+version: '3.1'
+
+services:
+  db:
+    image: postgres
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: on-failure
+    environment:
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: gym_db
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  django:
+    build:
+      context: .
+    restart: on-failure
+    ports:
+      - "80:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+
+  adminer:
+    image: adminer
+    restart: on-failure
+    ports:
+      - "5000:8080"
+
+volumes:
+  db_data:
+

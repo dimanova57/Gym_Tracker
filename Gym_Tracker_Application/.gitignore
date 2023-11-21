@@ -1,0 +1,6 @@
+gym
+__pycache__
+.idea
+migrations
+venv
+tracker/secrets.py

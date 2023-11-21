@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+.main {
+    background-color: aliceblue;
+    height: 90vh;
+    width: 100vw;
+    overflow: auto;
+}
+
+.nav_mobile {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    background-color: white;
+    height: 10vh;
+}
+
+.nav_element {
+     margin: auto;
+}
+
+.head_text {
+    font-family: 'Kanit', sans-serif;
+    font-size: 10vh;
+    margin: 0vw 5vw 5vw 5vw;
+}
+
+.measure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    height: 10vh;
+    background-color: rgb(215, 234, 250);
+    margin: 0 0 0 5vw;
+}
+
+.measure:hover {
+    cursor: pointer;
+}
+
+.measure_title {
+    font-family: 'Kanit', sans-serif;
+    font-size: 5vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text] {
+    width: 70vw;
+    margin: 2vh auto 2vh auto;
+    padding: 2vh;
+    border:0;
+    border-radius:10px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    background-color: rgb(215, 234, 250);
+    font-family: 'Kanit', sans-serif;
+  }
+
+button {
+    width: 70vw;
+    margin: 2vh auto 2vh auto;
+    padding: 2vh;
+    border: solid grey 0.1vh;
+    border-radius:10px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    background-color: rgb(215, 234, 250);
+    font-family: 'Kanit', sans-serif;
+    font-size: 3vh;
+}
+
+.exercise {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    width: 90vw;
+    height: 10vh;
+    background-color: rgb(215, 234, 250);
+    margin: 5vh auto 5vh auto;
+}
+
+.exercise:hover {
+    cursor: pointer;
+}
+
+.exercise_title {
+    font-family: 'Kanit', sans-serif;
+    font-size: 5vh;
+}
+
+.exercise_image_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    width: 40vh;
+    margin: auto;
+    outline: 4px dashed black;
+}
+
+.exercise_image {
+    height: 90%;
+    width: 90%;
+}
+
+.instruction_box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 5vh 5vh 5vh 5vh;
+}
+
+.instruction {
+    font-size: 3vh;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 2vh 5vh 2vh 5vh;
+}
+
+.instruction_header {
+    font-family: 'Kanit', sans-serif;
+    font-size: 4vh;
+    margin: 2vh 5vh 2vh 5vh;
+}
